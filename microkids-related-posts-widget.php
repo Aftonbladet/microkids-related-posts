@@ -6,7 +6,7 @@ class WP_Widget_Related_Posts extends WP_Widget {
      */
 	function WP_Widget_Related_Posts() {
 		$widget_ops = array('classname' => 'widget_related_posts', 'description' => __( 'Display related posts as a widget', 'microkids-related-posts' ) );
-		$this->WP_Widget('related_posts', __('Related Posts', 'microkids-related-posts'), $widget_ops);
+		parent::__construct('related_posts', __('Related Posts', 'microkids-related-posts'), $widget_ops);
 	}
 	
 	/**
